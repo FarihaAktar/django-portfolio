@@ -65,21 +65,22 @@ https://templatemo.com/tm-578-first-portfolio
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_1">Home</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="#section_4">Projects</a>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_3">Blogs</a>
                         </li>
 
-                        <li class="nav-item">
-                            <a class="nav-link click-scroll" href="#section_4">Projects</a>
-                        </li>
+                   
 
                         <li class="nav-item">
                             <a class="nav-link click-scroll" href="#section_5">Contact</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link click-scroll" href="{% url 'login' %}">Login</a>
+                            <a class="nav-link " href="{% url 'login' %}">Login</a>
                         </li>
+                       
                     </ul>
 
                     <div class="d-lg-flex align-items-center d-none ms-auto">
@@ -87,6 +88,7 @@ https://templatemo.com/tm-578-first-portfolio
                         <a class="custom-btn btn" href="#section_5">
                             120-240-9600
                         </a>
+                       
                     </div>
                 </div>
 
@@ -291,6 +293,7 @@ https://templatemo.com/tm-578-first-portfolio
 
                             <p>
                                 <a href="mailto:hello@josh.design">
+                                    {{request.user}}
                                     Fariha@Gmail.com
                                 </a>
                             </p>

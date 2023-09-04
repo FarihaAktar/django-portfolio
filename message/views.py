@@ -8,10 +8,11 @@ def add_message(request):
         try:
             form = MessageForm(request.POST)
             review = form.save(commit=False)
-            review.save()
+            res = review.save()
+            print(res)
             return redirect('home')
             # return render(request, 'project_detail')
         except ValueError:
             return redirect('home')  
     else:      
-        return redirect('home')  
+        return render(request, 'home')  
